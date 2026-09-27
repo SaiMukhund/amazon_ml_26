@@ -1,0 +1,5 @@
+rerankers: ['rr_v1']
+eval set: 441,200 queries (test S1), corpus 2,061,938 (1,524,798 true matches + 537,140 distractors), 1,524,798 true pairs
+cosines: 7 runs (926s)
+context features (1340s)
+features: (8824000, 62) -> experiments/stacker/features.parquet (1570s)

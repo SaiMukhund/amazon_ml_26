@@ -1,0 +1,7 @@
+eval set: 441,200 queries (test S1), corpus 2,061,938 (1,524,798 true matches + 537,140 distractors), 1,524,798 true pairs
+training data: 1,667,028 anchors, 6,113,567 positive pairs, corpus 8,258,281 (excluded 2,061,938 eval-corpus records)
+  embedded 1,667,028 texts in 128s -> experiments/finetune/base_anchors.npy
+  embedded 8,258,281 texts in 625s -> experiments/finetune/base_corpus.npy
+  mined top-32 in 215s
+  base-model recall@32 on training anchors: 0.969
+  saved training data to experiments/finetune

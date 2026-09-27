@@ -1,0 +1,12 @@
+eval set: 441,200 queries (test S1), corpus 2,061,938 (1,524,798 true matches + 537,140 distractors), 1,524,798 true pairs
+=== Experiment 2: name + address | e5-large-ft (/home/saimukhundm/amazon_ml/models/e5-large-ft) | field=embed_text | index=flat
+  embedded 441,200 texts in 51s -> experiments/retrieval/emb/e5-large-ft_embed_text_queries.npy
+  embedded 2,061,938 texts in 148s -> experiments/retrieval/emb/e5-large-ft_embed_text_corpus.npy
+  search + eval in 47s
+  all    pair recall @1=0.273 @5=0.945 @10=0.998 @20=0.999 @50=1.000 @100=1.000 | entity full recall @10=0.992 @100=1.000
+  India  pair recall @1=0.272 @5=0.946 @10=0.998 @20=0.999 @50=1.000 @100=1.000 | entity full recall @10=0.993 @100=1.000
+  US     pair recall @1=0.273 @5=0.945 @10=0.998 @20=0.999 @50=1.000 @100=1.000 | entity full recall @10=0.991 @100=1.000
+results: experiments/retrieval/results.json and results.md
+  pair recall (all)      @1  @5  @10  @20  @50  @100
+  e5-large       26.8  91.2  96.7  97.3  97.9  98.2
+  e5-large-ft    27.3  94.5  99.8  99.9  100.0  100.0

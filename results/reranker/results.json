@@ -1,0 +1,48 @@
+{
+ "n_pairs": 8824000,
+ "n_s1": 441200,
+ "candidate_recall": 0.9992484250372836,
+ "auc_reranker": 0.9948729988102787,
+ "ap_reranker": 0.9805198720419546,
+ "auc_cosine": 0.99708954091127,
+ "ap_cosine": 0.9904113263437657,
+ "f05": [
+  {
+   "scorer": "cosine",
+   "one_s1_per_record": false,
+   "best_thr": 0.8100447654724121,
+   "macro_f05": 0.9564039107364483,
+   "precision": 0.9893535993056874,
+   "recall": 0.9016701107636443,
+   "macro_f05_at_0.5": null
+  },
+  {
+   "scorer": "cosine",
+   "one_s1_per_record": true,
+   "best_thr": 0.7554816704988481,
+   "macro_f05": 0.9583394904903577,
+   "precision": 0.970270526135036,
+   "recall": 0.9464480862575552,
+   "macro_f05_at_0.5": null
+  },
+  {
+   "scorer": "reranker",
+   "one_s1_per_record": false,
+   "best_thr": 0.99,
+   "macro_f05": 0.8467909441684782,
+   "precision": 0.8384147982742459,
+   "recall": 0.9473110962718353,
+   "macro_f05_at_0.5": 0.7578667418846893
+  },
+  {
+   "scorer": "reranker",
+   "one_s1_per_record": true,
+   "best_thr": 0.5,
+   "macro_f05": 0.9830978125898462,
+   "precision": 0.9853246896167064,
+   "recall": 0.9843102314811323,
+   "macro_f05_at_0.5": 0.9830978125898462
+  }
+ ],
+ "oracle_f05": 0.9997906636863229
+}

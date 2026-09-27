@@ -1,0 +1,50 @@
+{
+ "thr": 0.5,
+ "macro_f05": 0.9830978125898462,
+ "loss_share": {
+  "singletons with a false merge": 0.15702849867425267,
+  "non-singletons: false merges only": 0.5268476669225116,
+  "non-singletons: misses only": 0.2682767201576018,
+  "non-singletons: both": 0.04784711424563385
+ },
+ "fp_total": 22977,
+ "fp_whose": {
+  "another test S1": 21497,
+  "distractor": 1480
+ },
+ "fp_patterns": {
+  "candidate address empty": 20821,
+  "name unrelated (sim<50)": 1203,
+  "house number differs (other)": 565,
+  "house number off by 1-5/7/9/11 (distractor fingerprint)": 276,
+  "other": 64,
+  "legal form differs": 42,
+  "Indic-script name": 6
+ },
+ "fn_total": 24038,
+ "fn_not_retrieved": 1146,
+ "fn_reason": {
+  "above threshold but assigned to another S1": 20691,
+  "score below threshold": 2201
+ },
+ "fn_patterns": {
+  "candidate address empty": 19797,
+  "name unrelated (sim<50)": 1153,
+  "house number differs (other)": 953,
+  "house number off by 1-5/7/9/11 (distractor fingerprint)": 667,
+  "other": 165,
+  "legal form differs": 128,
+  "Indic-script name": 17,
+  "domain / handle name": 12
+ },
+ "correct_patterns": {
+  "other": 0.535125,
+  "legal form differs": 0.21587,
+  "house number differs (other)": 0.10805,
+  "Indic-script name": 0.057765,
+  "candidate address empty": 0.03121,
+  "name unrelated (sim<50)": 0.02004,
+  "domain / handle name": 0.015985,
+  "house number off by 1-5/7/9/11 (distractor fingerprint)": 0.015955
+ }
+}

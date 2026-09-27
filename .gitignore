@@ -1,0 +1,19 @@
+# challenge data (not redistributable) and generated data
+student_resource/
+experiments/
+output/
+catboost_info/
+
+# large model weights - see models/MANIFEST.md
+models/**/*.safetensors
+models/**/*.bin
+models/**/tokenizer.json
+models/BAAI__bge-m3/
+models/microsoft__mdeberta-v3-base/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.npy
+*.npz
+*.parquet

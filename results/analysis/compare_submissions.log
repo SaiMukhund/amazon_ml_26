@@ -1,0 +1,36 @@
+new file: 1,732,544 rows, header ['source1_entity_id', 'matched_entity_ids'], empty 5.88%, pairs 5,812,435
+  records assigned to >1 S1: 0
+
+pair Jaccard:
+                 new_0.987337  friend_0.986149      v1      v2  v2_fix   merge
+new_0.987337           1.0000           0.9804  0.9684  0.9773  0.9786  0.9823
+friend_0.986149        0.9804           1.0000  0.9699  0.9786  0.9802  0.9915
+v1                     0.9684           0.9699  1.0000  0.9840  0.9848  0.9772
+v2                     0.9773           0.9786  0.9840  1.0000  0.9967  0.9870
+v2_fix                 0.9786           0.9802  0.9848  0.9967  1.0000  0.9886
+merge                  0.9823           0.9915  0.9772  0.9870  0.9886  1.0000
+
+macro F0.5 of each file measured against the NEW file as reference:
+  friend_0.986149  0.9874
+  v1               0.9819
+  v2               0.9842
+  v2_fix           0.9858
+  merge            0.9875
+
+pairs per S1 by country:
+                 India     US  France
+new_0.987337     3.389  3.391   3.155
+friend_0.986149  3.390  3.390   3.235
+v1               3.347  3.370   3.214
+v2               3.386  3.394   3.348
+v2_fix           3.386  3.394   3.272
+merge            3.395  3.393   3.309
+
+v2-only vs friend (77,339 pairs): new file contains 37.0%
+friend-only vs v2 (48,944 pairs): new file contains 48.7%
+  France  v2-only kept by new 38.2% (n=51,344) | friend-only kept by new 21.9% (n=21,995)
+  India   v2-only kept by new 35.6% (n=12,068) | friend-only kept by new 70.6% (n=15,765)
+  US      v2-only kept by new 34.0% (n=13,927) | friend-only kept by new 70.3% (n=11,184)
+pairs only in new (in neither v2 nor friend): 18,563; missing from new but in both v2 and friend: 43,206
+
+[exited with code 0]

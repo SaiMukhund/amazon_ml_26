@@ -1,0 +1,12 @@
+features: 8,824,000 pairs x 59 features; 441,200 S1; positives 0.173
+
+stage-2 models (out-of-fold):
+    xgb fold 0: 423 trees
+    xgb fold 1: 485 trees
+    xgb fold 2: 385 trees
+    xgb fold 3: 405 trees
+    xgb fold 4: 457 trees
+    xgb trained in 7.0 min
+  xgb                    F0.5 0.9942 (P 0.9992, R 0.9833, thr 0.8, abstain False) | without abstain 0.9942
+
+results -> experiments/stacker/stack_results_xgb.json and stack_results.md

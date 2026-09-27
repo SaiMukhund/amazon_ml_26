@@ -1,0 +1,34 @@
+features: 8,824,000 pairs x 59 features; 441,200 S1; positives 0.173
+
+stage-2 models (out-of-fold):
+    lgbm fold 0: 299 trees
+    lgbm fold 1: 247 trees
+    lgbm fold 2: 257 trees
+    lgbm fold 3: 234 trees
+    lgbm fold 4: 315 trees
+    lgbm trained in 7.9 min
+  lgbm                   F0.5 0.9942 (P 0.9988, R 0.9843, thr 0.7, abstain False) | without abstain 0.9942
+
+top LightGBM features (gain):
+   rr_v1_margin_other                 33,250,855
+   cos_e5-large-ft_embed_text         11,566,619
+   rr_v1                              5,757,527
+   cosft_margin_other                 587,157
+   cand_n_s1_pos                      534,686
+   cosft_rank_in_cand                 176,176
+   rr_v1_rank_in_cand                 165,155
+   rr_v1_best_other                   125,774
+   rr_v1_gap_to_s1_max                94,418
+   s1_name_freq                       63,338
+   cosft_best_other                   29,977
+   name_jw                            26,354
+   name_tsort                         19,412
+   cos_e5-large_embed_text            16,420
+   cos_bge-m3_name_core               14,278
+   cand_name_freq                     14,154
+   cosft_gap_to_s1_max                14,046
+   cos_e5-base_name_core              13,804
+   cos_bge-m3_embed_text              13,684
+   s1_n_pos                           13,632
+
+results -> experiments/stacker/stack_results_lgbm.json and stack_results.md

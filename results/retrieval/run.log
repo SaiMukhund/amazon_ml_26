@@ -1,0 +1,119 @@
+eval set: 441,200 queries (test S1), corpus 2,061,938 (1,524,798 true matches + 537,140 distractors), 1,524,798 true pairs
+
+=== Experiment 1: name only | e5-base (intfloat/multilingual-e5-base) | field=name_core | index=flat
+  search + eval in 33s
+  all    pair recall @1=0.183 @5=0.608 @10=0.700 @20=0.767 @50=0.862 @100=0.894 | entity full recall @10=0.476 @100=0.722
+  India  pair recall @1=0.169 @5=0.549 @10=0.636 @20=0.723 @50=0.866 @100=0.896 | entity full recall @10=0.396 @100=0.707
+  US     pair recall @1=0.193 @5=0.648 @10=0.742 @20=0.797 @50=0.859 @100=0.892 | entity full recall @10=0.530 @100=0.732
+
+=== Experiment 2: name + address | e5-base (intfloat/multilingual-e5-base) | field=embed_text | index=flat
+  search + eval in 30s
+  all    pair recall @1=0.267 @5=0.906 @10=0.962 @20=0.969 @50=0.975 @100=0.979 | entity full recall @10=0.873 @100=0.926
+  India  pair recall @1=0.268 @5=0.897 @10=0.950 @20=0.957 @50=0.963 @100=0.968 | entity full recall @10=0.835 @100=0.889
+  US     pair recall @1=0.267 @5=0.912 @10=0.970 @20=0.976 @50=0.982 @100=0.986 | entity full recall @10=0.898 @100=0.951
+
+=== Experiment 1: name only | e5-large (intfloat/multilingual-e5-large) | field=name_core | index=flat
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  embedded 441,200 texts in 40s -> experiments/retrieval/emb/e5-large_name_core_queries.npy
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  embedded 2,061,938 texts in 92s -> experiments/retrieval/emb/e5-large_name_core_corpus.npy
+  search + eval in 50s
+  all    pair recall @1=0.183 @5=0.611 @10=0.703 @20=0.771 @50=0.865 @100=0.897 | entity full recall @10=0.483 @100=0.731
+  India  pair recall @1=0.169 @5=0.552 @10=0.639 @20=0.727 @50=0.870 @100=0.901 | entity full recall @10=0.402 @100=0.719
+  US     pair recall @1=0.193 @5=0.650 @10=0.745 @20=0.800 @50=0.862 @100=0.895 | entity full recall @10=0.536 @100=0.739
+
+=== Experiment 2: name + address | e5-large (intfloat/multilingual-e5-large) | field=embed_text | index=flat
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  embedded 441,200 texts in 54s -> experiments/retrieval/emb/e5-large_embed_text_queries.npy
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  embedded 2,061,938 texts in 151s -> experiments/retrieval/emb/e5-large_embed_text_corpus.npy
+  search + eval in 35s
+  all    pair recall @1=0.268 @5=0.912 @10=0.967 @20=0.973 @50=0.979 @100=0.982 | entity full recall @10=0.889 @100=0.938
+  India  pair recall @1=0.269 @5=0.906 @10=0.957 @20=0.963 @50=0.969 @100=0.973 | entity full recall @10=0.857 @100=0.906
+  US     pair recall @1=0.268 @5=0.916 @10=0.974 @20=0.980 @50=0.985 @100=0.988 | entity full recall @10=0.910 @100=0.959
+
+=== Experiment 1: name only | bge-m3 (BAAI/bge-m3) | field=name_core | index=flat
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+W0926 13:18:33.344000 3715559 site-packages/torch/multiprocessing/spawn.py:160] Terminating process 3733581 via signal SIGTERM
+W0926 13:18:33.346000 3715559 site-packages/torch/multiprocessing/spawn.py:160] Terminating process 3733665 via signal SIGTERM
+W0926 13:18:33.346000 3715559 site-packages/torch/multiprocessing/spawn.py:160] Terminating process 3733771 via signal SIGTERM
+W0926 13:18:33.346000 3715559 site-packages/torch/multiprocessing/spawn.py:160] Terminating process 3733878 via signal SIGTERM
+W0926 13:18:33.347000 3715559 site-packages/torch/multiprocessing/spawn.py:160] Terminating process 3733997 via signal SIGTERM
+W0926 13:18:33.348000 3715559 site-packages/torch/multiprocessing/spawn.py:160] Terminating process 3734116 via signal SIGTERM
+W0926 13:18:33.348000 3715559 site-packages/torch/multiprocessing/spawn.py:160] Terminating process 3734245 via signal SIGTERM
+Traceback (most recent call last):
+  File "/home/saimukhundm/amazon_ml/code/retrieval_experiments.py", line 293, in <module>
+    main()
+  File "/home/saimukhundm/amazon_ml/code/retrieval_experiments.py", line 277, in main
+    qe = embed(queries[field].values, cfg, fc["max_len"], gpus, os.path.join(a.out, "emb", f"{model}_{field}_queries.npy"), a.batch)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saimukhundm/amazon_ml/code/retrieval_experiments.py", line 141, in embed
+    tmp.spawn(_embed_worker, args=(gpus, list(texts), cfg, max_len, batch, tmp_dir), nprocs=len(gpus), join=True)
+  File "/home/saimukhundm/miniconda3/envs/general/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 328, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saimukhundm/miniconda3/envs/general/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 284, in start_processes
+    while not context.join():
+              ^^^^^^^^^^^^^^
+  File "/home/saimukhundm/miniconda3/envs/general/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 203, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 0 terminated with the following error:
+Traceback (most recent call last):
+  File "/home/saimukhundm/miniconda3/envs/general/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 90, in _wrap
+    fn(i, *args)
+  File "/home/saimukhundm/amazon_ml/code/retrieval_experiments.py", line 112, in _embed_worker
+    model = AutoModel.from_pretrained(cfg["hf"], dtype=torch.float16).to(dev).eval()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saimukhundm/miniconda3/envs/general/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 402, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saimukhundm/miniconda3/envs/general/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4313, in from_pretrained
+    loading_info, disk_offload_index = cls._load_pretrained_model(model, state_dict, checkpoint_files, load_config)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saimukhundm/miniconda3/envs/general/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4452, in _load_pretrained_model
+    merged_state_dict.update(load_state_dict(ckpt_file, disable_mmap=load_config.disable_mmap))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saimukhundm/miniconda3/envs/general/lib/python3.11/site-packages/transformers/modeling_utils.py", line 360, in load_state_dict
+    check_torch_load_is_safe()
+  File "/home/saimukhundm/miniconda3/envs/general/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 1676, in check_torch_load_is_safe
+    raise ValueError(
+ValueError: Due to a serious vulnerability issue in `torch.load`, even with `weights_only=True`, we now require users to upgrade torch to at least v2.6 in order to use the function. This version restriction does not apply when loading files with safetensors.
+See the vulnerability report here https://nvd.nist.gov/vuln/detail/CVE-2025-32434
+

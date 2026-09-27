@@ -1,0 +1,24 @@
+===== FIX
+France rule: v2 868,594 France pairs -> 848,971 (19,623 removed); India/US unchanged
+wrote output/v2_fix/matching_results.tsv: 5,842,356 pairs, 5.7% empty, 3.372 per S1
+        mean matches  share empty
+France         3.272        0.058
+India          3.386        0.057
+US             3.394        0.057
+  matching_results.tsv: 1732544 rows (99161 empty, 1633383 non-empty).
+WARNING: ID-existence check is OFF (the default) — not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+PASS — no blocking issues found. Safe to submit.
+  vs other: 5,779,571 common, 62,785 only here, 54,013 only there
+===== MERGE
+merged pairs by source: {'agreed': 5784640, 'v2-only': 37152, 'other-only': 36472}
+  dropped: v2-only 40,187 (p < 0.98 or house fingerprint), other-only 12,318 (v2 p < 0.05); record conflicts 154
+wrote output/merge/matching_results.tsv: 5,858,264 pairs, 5.7% empty, 3.381 per S1
+        mean matches  share empty
+France         3.309        0.058
+India          3.395        0.057
+US             3.393        0.058
+  matching_results.tsv: 1732544 rows (99576 empty, 1632968 non-empty).
+WARNING: ID-existence check is OFF (the default) — not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+PASS — no blocking issues found. Safe to submit.
+
+[exited with code 0]

@@ -1,0 +1,23 @@
+train: 7,064,400 pairs (folds 1-4), hold-out 1,759,600 pairs (fold 0), 50 features
+    lgbm: 274 trees
+    xgb: 405 trees
+Warning: less than 75% GPU memory available for training. Free: 11838.4375 Total: 32494.125
+    cat: 791 trees
+    mlp: trained
+/home/saimukhundm/miniconda3/envs/general/lib/python3.11/site-packages/xgboost/core.py:751: UserWarning: [00:41:46] WARNING: /__w/xgboost/xgboost/src/common/error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+Potential solutions:
+- Use a data structure that matches the device ordinal in the booster.
+- Set the device for booster before call to inplace_predict.
+
+This warning will only be shown once.
+
+  return func(**kwargs)
+  predicted 1,759,600 pairs with ['lgbm', 'xgb', 'cat', 'mlp'] (6s)
+  lgbm                     F0.5 0.9939 (P 0.9989 R 0.9830) thr 0.75 abstain False
+  xgb                      F0.5 0.9939 (P 0.9989 R 0.9830) thr 0.75 abstain False
+  cat                      F0.5 0.9938 (P 0.9989 R 0.9829) thr 0.75 abstain False
+  mlp                      F0.5 0.9932 (P 0.9984 R 0.9822) thr 0.7 abstain True
+  mean(lgbm+xgb+cat+mlp)   F0.5 0.9939 (P 0.9992 R 0.9822) thr 0.8 abstain False
+  mean(lgbm+xgb+cat)       F0.5 0.9939 (P 0.9989 R 0.9830) thr 0.75 abstain False
+  reference: reranker v1   F0.5 0.9775 thr 0.85 abstain True
+chosen: mean(lgbm+xgb+cat), thr 0.75, abstain False -> models/stacker_v2/config.json (4.2 min)

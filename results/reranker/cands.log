@@ -1,0 +1,4 @@
+  embedded 98,593 texts in 30s -> experiments/reranker/base_singletons.npy
+train pairs: 8,535,568 (37.9% positive; 98,593 singleton anchors)
+eval set: 441,200 queries (test S1), corpus 2,061,938 (1,524,798 true matches + 537,140 distractors), 1,524,798 true pairs
+test pairs: 8,824,000 for 441,200 S1 (1,523,652 true of 1,524,798 -> candidate recall 0.9992)

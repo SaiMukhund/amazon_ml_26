@@ -1,0 +1,24 @@
+test: 1,732,544 S1, 9,969,589 S2+S3, 34,650,880 candidate pairs
+  score/context features (76s)
+  structured features (371s)
+  string features (537s)
+
+
+  predicted 34,650,880 pairs with ['lgbm', 'xgb', 'cat', 'mlp'] (74s)
+decision: mean(lgbm+xgb+cat), thr 0.75, abstain False -> 5,861,979 matched pairs
+wrote output/v2/matching_results.tsv (1,732,544 rows, 5.7% empty, mean 3.38 matches per S1)
+        mean matches  share empty
+France         3.348        0.055
+India          3.386        0.057
+US             3.394        0.057
+vs v1 submission: 95.36% of S1 rows identical
+ML Challenge 2026 — submission validator
+  test dir: dataset/test
+  required S1 entities: 1732544
+  matching_results.tsv: 1732544 rows (98307 empty, 1634237 non-empty).
+  candidate_pairs.tsv: 1732544 rows (0 empty, 1732544 non-empty).
+
+WARNING: ID-existence check is OFF (the default) — not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+PASS — no blocking issues found. Safe to submit.
+
+total time 16.3 min

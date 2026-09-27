@@ -1,0 +1,9 @@
+pairs 8,824,000, candidate recall 0.9992
+pair AUC  reranker 0.9949  cosine 0.9971
+pair AP   reranker 0.9805  cosine 0.9904
+  cosine    assign=False best thr 0.8100: macro F0.5 0.9564 (P 0.9894, R 0.9017)
+  cosine    assign=True  best thr 0.7555: macro F0.5 0.9583 (P 0.9703, R 0.9464)
+  reranker  assign=False best thr 0.9900: macro F0.5 0.8468 (P 0.8384, R 0.9473) | at 0.5: 0.7579
+  reranker  assign=True  best thr 0.5000: macro F0.5 0.9831 (P 0.9853, R 0.9843) | at 0.5: 0.9831
+  oracle (perfect classifier on these candidates): macro F0.5 0.9998
+results -> experiments/reranker/results.json

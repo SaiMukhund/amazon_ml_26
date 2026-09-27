@@ -1,0 +1,20 @@
+eval set: 441,200 queries (test S1), corpus 2,061,938 (1,524,798 true matches + 537,140 distractors), 1,524,798 true pairs
+  converted BAAI/bge-m3 weights to safetensors -> models/BAAI__bge-m3
+
+=== Experiment 1: name only | bge-m3 (BAAI/bge-m3) | field=name_core | index=flat
+  embedded 441,200 texts in 37s -> experiments/retrieval/emb/bge-m3_name_core_queries.npy
+  embedded 2,061,938 texts in 91s -> experiments/retrieval/emb/bge-m3_name_core_corpus.npy
+  search + eval in 52s
+  all    pair recall @1=0.183 @5=0.604 @10=0.694 @20=0.761 @50=0.856 @100=0.890 | entity full recall @10=0.461 @100=0.709
+  India  pair recall @1=0.169 @5=0.547 @10=0.632 @20=0.718 @50=0.862 @100=0.895 | entity full recall @10=0.385 @100=0.696
+  US     pair recall @1=0.193 @5=0.642 @10=0.735 @20=0.789 @50=0.852 @100=0.887 | entity full recall @10=0.511 @100=0.717
+
+=== Experiment 2: name + address | bge-m3 (BAAI/bge-m3) | field=embed_text | index=flat
+  embedded 441,200 texts in 50s -> experiments/retrieval/emb/bge-m3_embed_text_queries.npy
+  embedded 2,061,938 texts in 143s -> experiments/retrieval/emb/bge-m3_embed_text_corpus.npy
+  search + eval in 48s
+  all    pair recall @1=0.268 @5=0.908 @10=0.964 @20=0.970 @50=0.975 @100=0.978 | entity full recall @10=0.880 @100=0.926
+  India  pair recall @1=0.268 @5=0.895 @10=0.949 @20=0.955 @50=0.961 @100=0.965 | entity full recall @10=0.836 @100=0.881
+  US     pair recall @1=0.268 @5=0.917 @10=0.973 @20=0.979 @50=0.985 @100=0.987 | entity full recall @10=0.909 @100=0.956
+
+results: experiments/retrieval/results.json and results.md

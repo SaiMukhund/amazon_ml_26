@@ -1,0 +1,12 @@
+France: 114 descriptor words; above thr 868,608 pairs: descriptor swap 37,131, house differs 18,965
+France pairs kept: v2 868,594 -> 824,721; India/US unchanged
+wrote output/v3_france/matching_results.tsv: 5,818,106 pairs, 5.8% empty, 3.358 per S1
+        mean matches  share empty
+France         3.179        0.062
+India          3.386        0.057
+US             3.394        0.057
+  matching_results.tsv: 1732544 rows (100041 empty, 1632503 non-empty).
+WARNING: ID-existence check is OFF (the default) — not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+PASS — no blocking issues found. Safe to submit.
+
+[exited with code 0]

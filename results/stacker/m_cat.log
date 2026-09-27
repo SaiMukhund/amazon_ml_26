@@ -1,0 +1,12 @@
+features: 8,824,000 pairs x 59 features; 441,200 S1; positives 0.173
+
+stage-2 models (out-of-fold):
+    cat fold 0: 766 trees
+    cat fold 1: 731 trees
+    cat fold 2: 644 trees
+    cat fold 3: 548 trees
+    cat fold 4: 909 trees
+    cat trained in 9.6 min
+  cat                    F0.5 0.9941 (P 0.9992, R 0.9831, thr 0.8, abstain True) | without abstain 0.9941
+
+results -> experiments/stacker/stack_results_cat.json and stack_results.md

@@ -1,0 +1,21 @@
+test: 1,732,544 S1, 9,969,589 S2+S3; countries S1 {'India': 809986, 'US': 663106, 'France': 259452}
+    gpu0: 1,024/4,331,360 pairs, eta 126237 min
+    gpu0: 1,025,024/4,331,360 pairs, eta 33 min
+    gpu0: 2,049,024/4,331,360 pairs, eta 24 min
+    gpu0: 3,073,024/4,331,360 pairs, eta 15 min
+    gpu0: 4,097,024/4,331,360 pairs, eta 3 min
+  reranked 34,650,880 pairs in 56.0 min
+decision: thr 0.7, abstain True -> 5,779,371 matched pairs
+wrote output/matching_results.tsv (1,732,544 rows, 101,962 empty = 5.9%, mean 3.34 matches per S1) and output/candidate_pairs.tsv
+        mean matches  share empty
+France         3.214        0.065
+India          3.347        0.058
+US             3.370        0.057
+ML Challenge 2026 — submission validator
+  test dir: dataset/test
+  required S1 entities: 1732544
+  matching_results.tsv: 1732544 rows (101962 empty, 1630582 non-empty).
+  candidate_pairs.tsv: 1732544 rows (0 empty, 1732544 non-empty).
+WARNING: ID-existence check is OFF (the default) — not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+PASS — no blocking issues found. Safe to submit.
+total time 60.9 min
